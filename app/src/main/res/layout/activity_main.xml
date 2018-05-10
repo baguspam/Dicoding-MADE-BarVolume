@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.maspamz.barvolume.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/labelbar"
+                android:layout_below="@+id/spinner"
+                android:text="Pilih volume yang ingin dihitung"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_above="@+id/labelbar"
+                android:layout_marginBottom="5dp"
+                android:entries="@array/barvolume"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_selectbar"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/putih"
+
+                android:text="Mulai Hitung"/>
+
+            <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/vf_barvolume"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include android:id="@+id/include_kosong" layout="@layout/activity_kosong" />
+                <include android:id="@+id/include_kubus" layout="@layout/activity_kubus" />
+                <include android:id="@+id/include_balok" layout="@layout/activity_balok" />
+                <include android:id="@+id/include_bola" layout="@layout/activity_bola" />
+
+            </ViewFlipper>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

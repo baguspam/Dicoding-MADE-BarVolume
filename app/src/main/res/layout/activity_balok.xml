@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rumusnya"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_kotak_abu"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:text="Volume = p x l x t"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bpanjang"
+        android:inputType="number"
+        android:hint="Panjang"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blebar"
+        android:inputType="number"
+        android:hint="Lebar"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btinggi"
+        android:inputType="number"
+        android:hint="Tinggi"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasilnya"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/abu_abu"
+        android:id="@+id/bhasil"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:hint="0"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/putih"
+        android:id="@+id/btn_hitung_balok"/>
+
+</LinearLayout>

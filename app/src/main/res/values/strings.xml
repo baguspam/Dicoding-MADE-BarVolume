@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BarVolume</string>
+    <string-array name="barvolume">
+        <item>Kubus</item>
+        <item>Balok</item>
+        <item>Bola</item>
+        <item>Tabung</item>
+        <item>Prisma</item>
+        <item>Kerucut</item>
+        <item>Limas</item>
+    </string-array>
+</resources>
